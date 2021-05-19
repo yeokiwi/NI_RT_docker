@@ -15,6 +15,8 @@ Alternatively, download the nibuild.tar from ykw
 
 1. then "docker load -i nibuild.tar"
 
+Before switching to using the container to build, switch the builder from internal builder to external builder(using make from gnuwin32) in the project C++ settings
+
 Execute the build by the following commands:
 
 docker run --rm -v c:\ni:c:\ni -w C:\ni\fg\workspace\fg\release\ --name nibuild nibuild make
